@@ -1,0 +1,364 @@
+:root {
+    --primary-color: #eead2d;
+    --icon-color: #252525;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    display: grid;
+    grid-template-areas: "content";
+    color: #C6CF86;
+}
+
+header {
+    grid-area: content;
+    place-self: start center;
+    height: 100px;
+    z-index: 666;
+    max-width: 1200px;
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 27vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    height: 100vh;
+    background: #FFFAF0;
+}
+
+footer {
+    width: 100%;
+    grid-area: content;
+    place-self: end center;
+    display: grid;
+    place-content: center;
+    height: 50px;
+    font-family: 'Trade Winds', cursive;
+    color: #C6CF86;
+}
+
+.tela {
+    background-color: #FFFAF0;
+    width: 100%;
+}
+
+.somos {
+    background-color: #FFFAF0;
+    width: 100%;
+}
+
+.noticias {
+    background: #FFFAF0;
+    width: 100%;
+}
+
+.fazemos {
+    background: #FFFAF0;
+    width: 100%;
+    height: 150vh;
+}
+
+.mvv {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 40vh;
+    margin-top: 30vh;
+    background: none;
+}
+
+.text-noticias {
+    text-align: center;
+    width: 90%;
+    max-width: 1000px;
+    padding: 135px;
+    margin: auto;
+    font-size: 270%;
+    font-family: 'Commissioner';
+    border: 7px solid #EFE3CC;
+}
+
+.novas-noticias {
+    text-align: end;
+    position: absolute;
+    font-family: 'Concert One';
+    padding: 40px;
+    width: 748px;
+    height: 40px;
+    left: 25vh;
+    top: 3308;
+    font-size: 270%;
+}
+
+.oque-fazemos {
+    text-align: end;
+    position: absolute;
+    font-family: 'Concert One';
+    padding: 40px;
+    width: 748px;
+    height: 40px;
+    left: 24vh;
+    top: 3308;
+    font-size: 270%;
+}
+
+.text-fazemos {
+    text-align: center;
+    width: 100%;
+    max-width: 1000px;
+    padding: 125px;
+    margin: auto;
+    font-size: 120%;
+    font-family: 'Commissioner';
+    border: 7px solid #EFE3CC;
+}
+
+.quem-somos {
+    text-align: end;
+    position: absolute;
+    font-family: 'Concert One';
+    padding: 40px;
+    width: 748px;
+    height: 40px;
+    left: 25vh;
+    top: 3308;
+    font-size: 270%;
+}
+
+.text-somos {
+    text-align: center;
+    width: 100%;
+    max-width: 1000px;
+    padding: 125px;
+    margin: auto;
+    font-size: 170%;
+    font-family: 'Commissioner';
+    border: 7px solid #EFE3CC;
+}
+
+.logo02 {
+    position: fixed;
+    right: 16px;
+    display: grid;
+    justify-content: end;
+    font-size: 2.5rem;
+    margin-top: 45vh;
+}
+
+.logo03 {
+    position: absolute;
+    width: 59px;
+    height: 62px;
+    left: 60px;
+    top: 73px;
+    background: url(list1.png);
+}
+
+.voltar {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    display: grid;
+    place-content: center;
+    font-size: 2.5rem;
+    transition: all .5s;
+}
+
+.voltar:hover {
+    color: #C6CF86;
+}
+
+
+/* **************************************** */
+
+.section__title3 {
+    grid-area: title;
+    font-size: 220px;
+    text-align: center;
+    place-items: center;
+    justify-content: center;
+    background: linear-gradient(#EFE3CC, #C6CF86);
+    background-clip: text;
+    font-family: 'Trade Winds', cursive;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.description__title3 {
+    color: aquamarine;
+    background-color: aqua;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.card-container2 {
+    width: 300px;
+    height: 400px;
+    position: relative;
+    perspective: 900px;
+    transform: translate(70px, 0px);
+}
+
+.card2 {
+    width: 300px;
+    height: 400px;
+    transform-style: preserve-3d;
+    transition: all 0.6s ease;
+}
+
+.front,
+.back {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1rem;
+    color: #C6CF86;
+    border-radius: 1rem;
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #277933;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    padding: 7px;
+}
+
+.card-container2:hover .card2 {
+    transform: rotateY(180deg);
+}
+
+.back {
+    transform: rotateY(180deg);
+    font-size: 14px;
+}
+
+.card-container3 {
+    width: 300px;
+    height: 400px;
+    position: relative;
+    perspective: 900px;
+    transform: translate(90px, 0px);
+}
+
+.card3 {
+    width: 300px;
+    height: 400px;
+    transform-style: preserve-3d;
+    transition: all 0.6s ease;
+}
+
+.front1,
+.back1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1rem;
+    color: #C6CF86;
+    border-radius: 1rem;
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #277933;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    padding: 7px;
+}
+
+.card-container3:hover .card3 {
+    transform: rotateY(180deg);
+}
+
+.back1 {
+    transform: rotateY(180deg);
+    font-size: 13px;
+}
+
+.card-container4 {
+    width: 300px;
+    height: 400px;
+    position: relative;
+    perspective: 900px;
+    transform: translate(110px, 0px);
+}
+
+.card4 {
+    width: 300px;
+    height: 400px;
+    transform-style: preserve-3d;
+    transition: all 0.6s ease;
+}
+
+.front2,
+.back2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1rem;
+    color: #C6CF86;
+    border-radius: 1rem;
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #277933;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    padding: 7px;
+}
+
+.card-container4:hover .card4 {
+    transform: rotateY(180deg);
+}
+
+.back2 {
+    transform: rotateY(180deg);
+}
+
+/* .cps12 {
+    position: absolute;
+    width: 150px;
+    height: 300px;
+    left: 870px;
+    top: 4870px;
+    background: url(image.png);
+} */
+
+.nosso-projeto {
+    position: absolute;
+    left: 90vh;
+    font-family: 'Concert One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 270%;
+    line-height: 75px;
+    color: #C6CF86;
+}
+
+.footer{
+    display: flex;
+    transform: translate(5vh, 142vh);
+}
